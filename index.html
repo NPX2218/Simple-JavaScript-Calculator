@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ <meta charset="UTF-8">
+  <!--Title of the window-->
+ <title>Simple JS Calculator | Neel Bansal</title>
+ <link rel="stylesheet" href="css/styles.css">
+ <script src="scripts/script.js"></script>
+ <link rel="icon" type="image/x-icon" href="img/calculator-logo.ico">
+ <body>
+  <br><br><br>
+  <!--The main title in the website-->
+  <center><p>My JS Calculator</p></center>
+  <br><br><br>
+    <!--Creating the calculator table-->
+  <table class = "calculator" >
+    <tr>
+      <td colspan = "3"><input class = "display-box" type = "text" id = "result" disabled /></td>
+      <td><input id = "cancelButton" class = "pink_button" type = "button" value = "C" onclick = "clearScreen()" /> </td>
+    </tr>
+    <tr>
+      <td><input class = "purple_button" type = "button" value = "1" onclick = "display('1')" /></td>
+      <td><input class = "purple_button" type = "button" value = "2" onclick = "display('2')" /></td>
+      <td><input class = "purple_button" type = "button" value = "3" onclick = "display('3')" /></td>
+      <td><input class = "purple_button" type = "button" value = "/" onclick = "display('/')" /></td>
+    </tr>
+    <tr>
+      <td><input class = "purple_button" type = "button" value = "4" onclick = "display('4')" /></td>
+      <td><input class = "purple_button" type = "button" value = "5" onclick = "display('5')" /></td>
+      <td><input class = "purple_button" type = "button" value = "6" onclick = "display('6')" /></td>
+      <td><input class = "purple_button" type = "button" value = "-" onclick = "display('-')" /></td>
+    </tr>
+    <tr>
+      <td><input class = "purple_button" type = "button" value = "7" onclick = "display('7')" /></td>
+      <td><input class = "purple_button" type = "button" value = "8" onclick = "display('8')" /></td>
+      <td><input class = "purple_button" type = "button" value = "9" onclick = "display('9')" /></td>
+      <td><input class = "purple_button" type = "button" value = "+" onclick = "display('+')" /></td>
+    </tr>
+    <tr>
+      <td><input class = "purple_button" type = "button" value = "." onclick = "display('.')" /></td>
+      <td><input class = "purple_button" type = "button" value = "0" onclick = "display('0')" /></td>
+      <td><input class = "pink_button" type = "button" value = "=" onclick = "calculate()" /></td>
+      <td><input class = "purple_button" type = "button" value = "*" onclick = "display('*')" /></td>
+    </tr>  
+  </table>
+  <br>
+    <!--Centering the credit line-->
+  <center><a>By Neel Bansal</a></center>
+  </body>
+</html>
